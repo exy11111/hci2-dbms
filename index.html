@@ -49,6 +49,15 @@
             transition: height 1s ease;
         }
 
+        .submenu-text {
+        display: block; /* Ensures the padding affects the layout */
+        padding-left: 30px; /* Adjust this to get the desired indentation */
+        }
+
+        .active-btn {
+            background-color: #8c6ac4; /* Adjust the color to fit your design */
+        }
+
     </style>
 </head>
 
@@ -89,21 +98,65 @@
         </div>
         <div class="container-fluid">
             <a href="#" class="btn hrms-sidebar-btn mt-3 w-100 text-white"><i class="bi bi-house-fill"></i> Dashboard</a>
-            <div>
+            <div><!-- -->
                 <a href="#" class="btn hrms-sidebar-btn mt-3 w-100 text-white hrms-collapse-transition" id="btn1" data-bs-toggle="collapse" data-bs-target="#organizationOptions" aria-expanded="false" aria-controls="organizationOptions">
                     <i class="bi bi-people-fill"></i> Organization
                 </a>
                 <div id="organizationOptions" class="collapse">
-                    <a href="#" class="btn hrms-sidebar-btn mt-3 w-100 text-white">Option 1</a>
-                    <a href="#" class="btn hrms-sidebar-btn mt-3 w-100 text-white">Option 2</a>
-                    <a href="#" class="btn hrms-sidebar-btn mt-3 w-100 text-white">Option 3</a>
+                    <a href="#" class="btn hrms-sidebar-btn mt-3 w-100 text-white"><span class="submenu-text">Administrative Department</span></a>
+                    <a href="#" class="btn hrms-sidebar-btn mt-3 w-100 text-white"><span class="submenu-text">Academic Department</span></a>
                 </div>
             </div><!-- -->
-            <a href="#" class="btn hrms-sidebar-btn mt-3 w-100 text-white"><i class="bi bi-file-earmark-medical-fill"></i> Employees</a>
-            <a href="#" class="btn hrms-sidebar-btn mt-3 w-100 text-white"><i class="bi bi-calendar-check-fill"></i> Attendance</a>
-            <a href="#" class="btn hrms-sidebar-btn mt-3 w-100 text-white"><i class="bi bi-briefcase-fill"></i> Projects</a>
-            <a href="#" class="btn hrms-sidebar-btn mt-3 w-100 text-white"><i class="bi bi-credit-card-fill"></i> Payroll</a>
-            <a href="#" class="btn hrms-sidebar-btn mt-3 w-100 text-white"><i class="bi bi-exclamation-circle-fill"></i> Reports</a>
+            <div><!-- -->
+                <a href="#" class="btn hrms-sidebar-btn mt-3 w-100 text-white hrms-collapse-transition" id="btn1" data-bs-toggle="collapse" data-bs-target="#employeesOptions" aria-expanded="false" aria-controls="employeesOptions">
+                    <i class="bi bi-file-earmark-person-fill"></i> Employees
+                </a>
+                <div id="employeesOptions" class="collapse">
+                    <a href="#" class="btn hrms-sidebar-btn mt-3 w-100 text-white"><span class="submenu-text">Personnel</span></a>
+                    <a href="#" class="btn hrms-sidebar-btn mt-3 w-100 text-white"><span class="submenu-text">Disciplinary Notice</span></a>
+                    <a href="#" class="btn hrms-sidebar-btn mt-3 w-100 text-white"><span class="submenu-text">Recruitment</span></a>
+                </div>
+            </div><!-- -->
+            <div><!-- -->
+                <a href="#" class="btn hrms-sidebar-btn mt-3 w-100 text-white hrms-collapse-transition" id="btn1" data-bs-toggle="collapse" data-bs-target="#attendanceOptions" aria-expanded="false" aria-controls="attendanceOptions">
+                    <i class="bi bi-calendar-check-fill"></i> Attendance
+                </a>
+                <div id="attendanceOptions" class="collapse">
+                    <a href="#" class="btn hrms-sidebar-btn mt-3 w-100 text-white"><span class="submenu-text">Attendance List</span></a>
+                    <a href="#" class="btn hrms-sidebar-btn mt-3 w-100 text-white"><span class="submenu-text">Leave</span></a>
+                    <a href="#" class="btn hrms-sidebar-btn mt-3 w-100 text-white"><span class="submenu-text">Reports</span></a>
+                </div>
+            </div><!-- -->
+            <div><!-- -->
+                <a href="#" class="btn hrms-sidebar-btn mt-3 w-100 text-white hrms-collapse-transition" id="btn1" data-bs-toggle="collapse" data-bs-target="#projectsOptions" aria-expanded="false" aria-controls="projectsOptions">
+                    <i class="bi bi-briefcase-fill"></i> Projects
+                </a>
+                <div id="projectsOptions" class="collapse">
+                    <a href="#" class="btn hrms-sidebar-btn mt-3 w-100 text-white"><span class="submenu-text">Progress Tracking</span></a>
+                    <a href="#" class="btn hrms-sidebar-btn mt-3 w-100 text-white"><span class="submenu-text">List of Request</span></a>
+                    <a href="#" class="btn hrms-sidebar-btn mt-3 w-100 text-white"><span class="submenu-text">List of Approved</span></a>
+                </div>
+            </div><!-- -->
+            <div><!-- -->
+                <a href="#" class="btn hrms-sidebar-btn mt-3 w-100 text-white hrms-collapse-transition" id="btn1" data-bs-toggle="collapse" data-bs-target="#payrollOptions" aria-expanded="false" aria-controls="payrollOptions">
+                    <i class="bi bi-credit-card-fill"></i> Payroll
+                </a>
+                <div id="payrollOptions" class="collapse">
+                    <a href="#" class="btn hrms-sidebar-btn mt-3 w-100 text-white"><span class="submenu-text">Employee</span></a>
+                    <a href="#" class="btn hrms-sidebar-btn mt-3 w-100 text-white"><span class="submenu-text">Payslip</span></a>
+                    <a href="#" class="btn hrms-sidebar-btn mt-3 w-100 text-white"><span class="submenu-text">Reports</span></a>
+                </div>
+            </div><!-- -->
+            <div><!-- -->
+                <a href="#" class="btn hrms-sidebar-btn mt-3 w-100 text-white hrms-collapse-transition" id="btn1" data-bs-toggle="collapse" data-bs-target="#reportsOptions" aria-expanded="false" aria-controls="reportsOptions">
+                    <i class="bi bi-exclamation-circle-fill"></i> Reports
+                </a>
+                <div id="reportsOptions" class="collapse">
+                    <a href="#" class="btn hrms-sidebar-btn mt-3 w-100 text-white"><span class="submenu-text">1</span></a>
+                    <a href="#" class="btn hrms-sidebar-btn mt-3 w-100 text-white"><span class="submenu-text">2</span></a>
+                    <a href="#" class="btn hrms-sidebar-btn mt-3 w-100 text-white"><span class="submenu-text">3</span></a>
+                </div>
+            </div><!-- -->
         </div>
         <div style="position: absolute; bottom: 0; right: 0; padding: 10px;">
             <a href="#" class="btn hrms-sidebar-btn mt-3 w-100 text-white" style="border:1px solid #cab0fd">Logout</a>
@@ -188,26 +241,69 @@
         </div>
     </div>
 
-    <script>
-        function toggleSidebar() {
-            var sidebar = document.getElementById('sidebar');
-            var content = document.getElementById('content');
-            var navbar = document.getElementById('navbar');
-        
-            if (sidebar.classList.contains('show-sidebar')) {
-                sidebar.classList.remove('show-sidebar');
-                content.style.marginLeft = '0';
-                navbar.style.marginLeft = '0';
-            }
-            else {
-                sidebar.classList.add('show-sidebar');
-                content.style.marginLeft = '250px';
-                navbar.style.marginLeft = '250px';
-            }
-        }
-    </script>
-
 </body>
+<script>
+    function toggleSidebar() {
+        var sidebar = document.getElementById('sidebar');
+        var content = document.getElementById('content');
+        var navbar = document.getElementById('navbar');
+    
+        if (sidebar.classList.contains('show-sidebar')) {
+            sidebar.classList.remove('show-sidebar');
+            content.style.marginLeft = '0';
+            navbar.style.marginLeft = '0';
+        }
+        else {
+            sidebar.classList.add('show-sidebar');
+            content.style.marginLeft = '250px';
+            navbar.style.marginLeft = '250px';
+        }
+    }
+    document.addEventListener('DOMContentLoaded', function () {
+    var submenus = document.querySelectorAll('.sidebar .collapse');
+    var menuButtons = document.querySelectorAll('.sidebar .btn'); // Select all menu buttons
+
+    submenus.forEach(function (submenu) {
+        submenu.addEventListener('show.bs.collapse', function () {
+            submenus.forEach(function (item) {
+                if (item !== submenu) {
+                    var bsCollapse = new bootstrap.Collapse(item, {
+                        toggle: false
+                    });
+                    bsCollapse.hide();
+                }
+            });
+
+            // Remove active class from all buttons
+            menuButtons.forEach(function(btn) {
+                btn.classList.remove('active-btn');
+            });
+
+            // Find the button that controls the submenu and add the active class
+            var controlButton = document.querySelector(`[data-bs-target="#${submenu.id}"]`);
+            controlButton.classList.add('active-btn');
+        });
+    });
+});
+
+
+    document.addEventListener('DOMContentLoaded', function () {
+    var submenus = document.querySelectorAll('.sidebar .collapse');
+
+    submenus.forEach(function (submenu) {
+        submenu.addEventListener('show.bs.collapse', function () {
+            submenus.forEach(function (item) {
+                if (item !== submenu) {
+                    var bsCollapse = new bootstrap.Collapse(item, {
+                        toggle: false
+                    });
+                    bsCollapse.hide();
+                }
+            });
+        });
+    });
+});
+</script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
 </html>
