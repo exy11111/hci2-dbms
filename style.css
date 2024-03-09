@@ -1,0 +1,55 @@
+body{
+    background-image: url('icons/hrms-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.hrms-bgpurple, .hrms-bgpurple:focus{
+    background-color: #6f51b5;
+}
+.hrms-cpurple{
+    color: #6f51b5;
+}
+.sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    height: 100%;
+    background-color: #fff;
+    transition: left 1s ease;
+    z-index: 1000;
+    padding-top: 50px;
+}
+.content {
+    transition: margin-left 1s ease;
+}
+.navbar {
+    transition: margin-left 1s ease;
+}
+.show-sidebar {
+    left: 0;
+}
+.hrms-sidebar-btn:hover{
+    background-color: #8c6ac4;
+}
+.hrms-sidebar-btn{
+    text-align: left;
+}
+.hrms-collapse-transition {
+    transition: height 1s ease;
+}
+
+.submenu-text {
+    display: block; 
+    padding-left: 30px; 
+}
+
+.active-btn, .active-page{
+    background-color: #8c6ac4;
+}
+
+@media (max-width: 768px) {
+    .sidebar img {
+        height: 40px;
+    }
+}
